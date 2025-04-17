@@ -1,6 +1,6 @@
-export const apiUrl = 'https://nettuts.hu/jms/kovikaze/';
+const apiUrl = 'https://nettuts.hu/jms/kovikaze/';
 
-const getAll = (entity = 'product') => {
+export const getAll = (entity = 'product') => {
     return fetch(`${apiUrl}${entity}`)
         .then( response => response.json() );
 };
